@@ -1,8 +1,3 @@
----
-language: ruby
-tags: sinatra, rails, activerecord, associations, models, views, controllers
----
-
 # Pollywog Ranch
 
 == README
