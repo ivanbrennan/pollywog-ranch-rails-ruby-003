@@ -21,6 +21,8 @@ PollywogRanchRailsRuby003::Application.routes.draw do
   # put    "/frogs/:id"      => "frogs#update"
   # delete "/frogs/:id"      => "frogs#destroy"
 
+  get "/tadpoles/evolve" => "tadpoles#evolve"
+
   resources :tadpoles
   # get    "/tadpoles"          => "tadpoles#index"
   # post   "/tadpoles"          => "tadpoles#create"

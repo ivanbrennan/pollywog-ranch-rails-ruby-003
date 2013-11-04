@@ -1,0 +1,9 @@
+<h1>Edit <%= @tadpole.name %></h1>
+<%= form_for @tadpole do |f| %>
+  <%= f.label :name %>: <%= f.text_field :name, :placeholder => @tadpole.name, :value => nil %><br>
+  <%= f.label :color %>: <%= f.text_field :color, :placeholder => @tadpole.color, :value => nil %><br>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Cancel", tadpoles_path %>

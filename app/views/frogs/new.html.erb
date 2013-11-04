@@ -1,0 +1,9 @@
+<h1>Create a new frog</h1>
+<%= form_for Frog.new do |f| %>
+  <%= f.label :name %>: <%= f.text_field :name %><br>
+  <%= f.label :color %>: <%= f.text_field :color %><br>
+  <%= f.label :lives %>: <%= select(:frog, :pond_id, Pond.all.collect {|p| [ p.name, p.id ] }) %><br>
+
+  <%= f.submit %>
+<% end %><br>
+<%= link_to("Cancel", frogs_path) %>

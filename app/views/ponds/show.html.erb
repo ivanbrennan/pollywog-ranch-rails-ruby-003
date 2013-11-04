@@ -13,5 +13,5 @@
   <% end %>
 </ol>
 <%= link_to("Back", ponds_path) %> | 
-<%= link_to("Edit", edit_pond_path) %> | 
-<%= link_to("Delete", pond_path, :method => :delete) %>
+<%= link_to("Edit", edit_pond_path) %>
+<%= button_to("Delete", pond_path, {:method => :delete}) %>
