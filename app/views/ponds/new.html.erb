@@ -1,0 +1,8 @@
+<h1>Create a new pond</h1>
+<%= form_for Pond.new do |f| %>
+  <%= f.label :name %>: <%= f.text_field :name %><br>
+  <%= f.label :water_type %>: <%= f.text_field :water_type %><br>
+
+  <%= f.submit %>
+<% end %><br>
+<%= link_to("Cancel", ponds_path) %>

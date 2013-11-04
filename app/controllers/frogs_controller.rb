@@ -1,0 +1,3 @@
+class FrogsController < ApplicationController
+
+end

@@ -1,4 +1,36 @@
 PollywogRanchRailsRuby003::Application.routes.draw do
+  root to: "application#index"
+
+  resources :ponds
+  # get    "/ponds"          => "ponds#index"
+  # post   "/ponds"          => "ponds#new"
+  # get    "/ponds/new"      => "ponds#create"
+  # get    "/ponds/:id/edit" => "ponds#edit"
+  # get    "/ponds/:id"      => "ponds#show"
+  # patch  "/ponds/:id"      => "ponds#update"
+  # put    "/ponds/:id"      => "ponds#update"
+  # delete "/ponds/:id"      => "ponds#destroy"
+
+  resources :frogs
+  # get    "/frogs"          => "frogs#index"
+  # post   "/frogs/new"      => "frogs#create"
+  # get    "/frogs"          => "frogs#new"
+  # get    "/frogs/:id/edit" => "frogs#edit"
+  # get    "/frogs/:id"      => "frogs#show"
+  # patch  "/frogs/:id"      => "frogs#update"
+  # put    "/frogs/:id"      => "frogs#update"
+  # delete "/frogs/:id"      => "frogs#destroy"
+
+  resources :tadpoles
+  # get    "/tadpoles"          => "tadpoles#index"
+  # post   "/tadpoles"          => "tadpoles#create"
+  # get    "/tadpoles/new"      => "tadpoles#new"
+  # get    "/tadpoles/:id/edit" => "tadpoles#edit"
+  # get    "/tadpoles/:id"      => "tadpoles#show"
+  # patch  "/tadpoles/:id"      => "tadpoles#update"
+  # put    "/tadpoles/:id"      => "tadpoles#update"
+  # delete "/tadpoles/:id"      => "tadpoles#destroy"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
