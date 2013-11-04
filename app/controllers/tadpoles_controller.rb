@@ -6,7 +6,7 @@ class TadpolesController < ApplicationController
   end
 
   def create
-    Tadpole.create(params.require(:tadpole).permit(:name))
+    Tadpole.create(params.require(:tadpole).permit(:name, :color, :frog_id))
     redirect_to tadpoles_path
   end
 
@@ -16,7 +16,6 @@ class TadpolesController < ApplicationController
 
   def show
     @tadpole = Tadpole.find(params[:id])
-    @parent = Frog.find(@tadpole.frog_id)
     render layout: false
   end
 

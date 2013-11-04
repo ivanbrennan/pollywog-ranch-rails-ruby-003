@@ -2,8 +2,8 @@
 
 <%= form_for Tadpole.new do |f| %>
   <%= f.label :name %>: <%= f.text_field :name %><br>
-  <%= f.hidden_field :color %><%= hidden_field_tag "color", "#{@frog.color}" %>
-  <%= f.hidden_field :frog_id %><%= hidden_field_tag "frog_id", "#{@frog.id}" %>
+  <%= f.hidden_field :color, :value => @frog.color %>
+  <%= f.hidden_field :frog_id, :value => @frog.id %>
 
   <%= f.submit "create" %>
 <% end %>

@@ -11,7 +11,7 @@
 <% end %>
 
 <p><strong>
-  <%= link_to("Create new tadpole baby", "#{new_tadpole_path}?frog_id=#{@frog.id}") %>
+  <%= link_to("Create new tadpole baby", new_tadpole_path(:frog_id => @frog.id)) %>
 </p></strong><br>
 
 <%= link_to("Back", frogs_path) %> | 
